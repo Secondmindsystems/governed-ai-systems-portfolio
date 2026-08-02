@@ -1,0 +1,115 @@
+{
+  "schema_version": "public-safe-receipt.v0.2",
+  "receipt_id": "PSR-AUTHORIZATION-v0.1",
+  "artifact_status": "PUBLIC_SAFE_CANDIDATE_NOT_PUBLISHED",
+  "case_title": "Authorization Before Inference",
+  "event_scope": "Two bounded local runtime episodes",
+  "technical_evidence_classes": [
+    "LIVE_CONTEXT",
+    "REPEATED_LOCAL"
+  ],
+  "execution_environment": "LOOPBACK_RUNTIME",
+  "public_claims": [
+    {
+      "public_claim_id": "PAI-01",
+      "statement": "The local runtime checked one-use permission before contacting the model and allowed exactly one authorized call.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "LOOPBACK_RUNTIME",
+      "required_limitation": "The model ran on the same machine in a non-production test.",
+      "claim_ceiling": "One authorized same-machine call occurred after a one-use permission check.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "remote-provider control",
+        "production operation",
+        "standing future authority"
+      ]
+    },
+    {
+      "public_claim_id": "PAI-02",
+      "statement": "After the permission was used, the runtime rejected a second attempt before sending another model request.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "LOOPBACK_RUNTIME",
+      "required_limitation": "One consumed-permission path does not establish broad resistance to hostile callers.",
+      "claim_ceiling": "In the cited path, the consumed permission stopped one second attempt before model transport.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "universal request prevention",
+        "hostile-caller resistance",
+        "production security"
+      ]
+    },
+    {
+      "public_claim_id": "PAI-03",
+      "statement": "The answer remained review-only text and could not authorize or execute another action.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "LOOPBACK_RUNTIME",
+      "required_limitation": "No downstream action system was exercised.",
+      "claim_ceiling": "The returned text remained inert in the cited local run.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "downstream action safety",
+        "autonomous execution",
+        "tool containment outside the cited run"
+      ]
+    },
+    {
+      "public_claim_id": "PAI-04",
+      "statement": "Seventy focused tests passed before the local, non-production run.",
+      "technical_evidence_class": "REPEATED_LOCAL",
+      "execution_externality": "LOOPBACK_RUNTIME",
+      "required_limitation": "The focused suites are not a production reliability benchmark.",
+      "claim_ceiling": "Seventy focused tests passed in the bounded local test scope.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "production reliability",
+        "statistical generalization",
+        "external validation"
+      ]
+    },
+    {
+      "public_claim_id": "PAI-05",
+      "statement": "A separate earlier local smoke test produced the expected non-empty response, then stopped a second attempt before another model request was sent.",
+      "technical_evidence_class": "REPEATED_LOCAL",
+      "execution_externality": "LOOPBACK_RUNTIME",
+      "required_limitation": "Two local episodes are corroboration, not a statistical reliability study.",
+      "claim_ceiling": "One earlier local smoke episode corroborated the one-use boundary.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "statistical reliability",
+        "deterministic behavior in all environments",
+        "production readiness"
+      ]
+    }
+  ],
+  "observed_negative_boundaries": {
+    "second_model_request_sent": false,
+    "tool_calls": 0,
+    "external_effects": 0,
+    "standing_future_authority_created": false
+  },
+  "test_evidence": {
+    "focused_tests_passed_before_operator_run": 70,
+    "separate_smoke_episode_present": true
+  },
+  "claim_ceiling": "One local, same-machine, non-production runtime enforced one-use permission before model transport and kept returned text separate from action authority.",
+  "limitations": [
+    "The model ran on the same machine.",
+    "No remote provider, browsing, retrieval, tool use, or external action occurred.",
+    "Two local episodes are corroboration, not a statistical reliability study.",
+    "The evidence does not establish production readiness or broad resistance to hostile callers."
+  ],
+  "prohibited_inferences": [
+    "remote-provider or production containment",
+    "hostile-caller resistance",
+    "downstream action safety",
+    "customer or market outcomes"
+  ],
+  "review_relationship": "INTERNAL_REVIEW_ONLY",
+  "market_outcome": "NONE",
+  "private_source_material_included": false
+}

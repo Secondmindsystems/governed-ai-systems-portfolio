@@ -1,0 +1,191 @@
+{
+  "schema_version": "public-safe-receipt.v0.2",
+  "receipt_id": "PSR-AUTHORITY-SEMANTICS-v0.1",
+  "artifact_status": "PUBLIC_SAFE_CANDIDATE_NOT_PUBLISHED",
+  "case_title": "When Permission Required Was Mistaken for Permission Granted",
+  "event_scope": "One bounded local repository-control repair and recorded staged-state replay",
+  "technical_evidence_classes": [
+    "LIVE_CONTEXT",
+    "REPEATED_LOCAL",
+    "WORKING_ARTIFACT"
+  ],
+  "execution_environment": "LOCAL_REPOSITORY",
+  "public_claims": [
+    {
+      "public_claim_id": "PAS-01",
+      "statement": "A live local repository gate blocked a 127-path staged integration after classifying two authority-related records as authority overclaims; the same refusal also recorded a separate receipt-storage defect.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "The original refusal recorded two authorization-classification findings plus one separate fail-closed receipt-storage internal error; it must not be presented as a single-cause event.",
+      "claim_ceiling": "One 127-path local staged state received a blocking gate result with two authority findings and one receipt-storage internal error.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "the refusal had only one cause",
+        "the authority findings were correct merely because the gate blocked",
+        "production or market validation"
+      ]
+    },
+    {
+      "public_claim_id": "PAS-02",
+      "statement": "Adjudication found that one record described permission still required and the other preserved a historical state in which permission had been withheld; neither record was a current permission grant.",
+      "technical_evidence_class": "WORKING_ARTIFACT",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "This conclusion is bounded to the two adjudicated records.",
+      "claim_ceiling": "The two identified records were classified as an unmet authority condition and an immutable historical authority state, not as current grants.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "all authority-bearing language is a non-grant",
+        "all historical records are safe to ignore",
+        "the gate should have been bypassed"
+      ]
+    },
+    {
+      "public_claim_id": "PAS-03",
+      "statement": "The repair changed exactly five paths: one gate implementation, two existing test modules, and two evidence records; neither triggering source record was edited.",
+      "technical_evidence_class": "WORKING_ARTIFACT",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "The adjudication records bound the five-file repair scope; independent proof of the original repair authorization beyond the adjudication record was not preserved in the cited commit.",
+      "claim_ceiling": "The commit-preserved adjudication and validation records show a five-path repair and unchanged triggering source artifacts.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "independent proof of the original repair authorization beyond the adjudication record",
+        "unbounded repair authority",
+        "runtime, downstream execution, product, or commit authority"
+      ]
+    },
+    {
+      "public_claim_id": "PAS-04",
+      "statement": "The repaired classifier distinguished required, requested, denied, absent, granted, and ambiguous authority states, and recognized specifically bounded historical states as non-operative, while retaining fail-closed treatment for unsupported or ambiguous authority.",
+      "technical_evidence_class": "REPEATED_LOCAL",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "The authorization-state coverage is bounded to the implemented fixtures, rules, and evaluated repository state.",
+      "claim_ceiling": "The focused implementation and tests distinguished the seven stated authority meanings and kept declared unsupported or ambiguous cases blocked.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "complete natural-language understanding",
+        "universal policy interpretation",
+        "adversarial robustness"
+      ]
+    },
+    {
+      "public_claim_id": "PAS-05",
+      "statement": "The focused repair suite passed 88 tests and 200 subtests with zero failures, errors, or skips.",
+      "technical_evidence_class": "REPEATED_LOCAL",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "Focused passing tests are not a production reliability benchmark.",
+      "claim_ceiling": "The declared focused local repair suite passed in the recorded environment.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "full-system qualification",
+        "production reliability",
+        "external validation"
+      ]
+    },
+    {
+      "public_claim_id": "PAS-06",
+      "statement": "The validation record reports that an internal authorization-state review passed all 58 declared cases against recorded gate and test hashes without mutating state.",
+      "technical_evidence_class": "REPEATED_LOCAL",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "The commit-preserved record does not independently prove reviewer role separation or third-party validation.",
+      "claim_ceiling": "The validation record reports that fifty-eight of fifty-eight declared authorization-state cases passed an internal review against recorded artifact hashes without reviewer mutation.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "third-party validation",
+        "external certification",
+        "complete authorization-state coverage"
+      ]
+    },
+    {
+      "public_claim_id": "PAS-07",
+      "statement": "After repair, replay of the recorded 127-path staged surface returned allow with zero blocking findings, zero structured authority blocks, and zero internal errors.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "The replay result is bounded to the recorded 127-path staged surface and repaired local gate.",
+      "claim_ceiling": "The recorded 127-path staged-surface replay passed the repaired gate with the stated zero counts.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "production qualification",
+        "all repository states will pass",
+        "future execution authority"
+      ]
+    },
+    {
+      "public_claim_id": "PAS-08",
+      "statement": "The final 132-path staged state returned allow with zero blocks, zero internal errors, and no gate bypass.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "A passing local gate result did not itself authorize a commit, downstream execution, runtime activation, deployment, or external action.",
+      "claim_ceiling": "The complete 132-path local staged state passed the repaired live gate with the stated zero counts and no bypass.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "commit authority",
+        "runtime or deployment authority",
+        "production qualification"
+      ]
+    },
+    {
+      "public_claim_id": "PAS-09",
+      "statement": "Eight known repository-control baseline failures and one inherited historical failure in an adjacent suite remained visible; no universal full-suite pass was claimed.",
+      "technical_evidence_class": "REPEATED_LOCAL",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "The authority repair resolved its identified defect without resolving those residual failures.",
+      "claim_ceiling": "The recorded broader runs retained eight known baseline failures and one inherited historical failure while reporting no new repair-linked failures.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "the entire system passed",
+        "the residual failures were repaired",
+        "production readiness"
+      ]
+    },
+    {
+      "public_claim_id": "PAS-10",
+      "statement": "The repaired integration was later recorded in a two-parent merge commit on a dedicated integration branch that was not part of the local mainline at internal verification on 2026-07-29.",
+      "technical_evidence_class": "WORKING_ARTIFACT",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "The earlier repair receipt neither authorized nor performed that later commit.",
+      "claim_ceiling": "One private two-parent integration commit records the repaired state and remained outside the verified local mainline.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "the repair receipt authorized the commit",
+        "the commit was merged to main",
+        "public source availability"
+      ]
+    }
+  ],
+  "observed_negative_boundaries": {
+    "triggering_source_records_modified": false,
+    "gate_bypass_used": false,
+    "global_authority_rule_disabled": false,
+    "full_suite_pass_claimed": false,
+    "external_validation_claimed": false
+  },
+  "claim_ceiling": "A 127-path staged integration was blocked on two authorization-classification findings plus one separate fail-closed receipt-storage internal error. A five-file repair preserved both triggering source records, passed the declared focused tests and internal authorization-state review against recorded artifact hashes, replayed the recorded 127-path staged surface, and evaluated the final 132-path state without blocks or internal errors. Residual failures remained visible, and neither passing result created execution or commit authority.",
+  "limitations": [
+    "This is a repository-local, non-production episode completed before any operational AI task or runtime execution.",
+    "The authorization-state coverage is bounded to the implemented rules and evaluated states.",
+    "The cited validation record does not independently prove reviewer role separation or third-party validation.",
+    "Eight known repository-control baseline failures remained.",
+    "One inherited historical failure in an adjacent suite remained.",
+    "No customer, compliance, revenue, or market outcome was measured."
+  ],
+  "prohibited_inferences": [
+    "complete natural-language authority understanding",
+    "universal full-suite pass",
+    "adversarial robustness",
+    "production or compliance qualification",
+    "customer or market validation"
+  ],
+  "review_relationship": "INTERNAL_REVIEW_ONLY",
+  "market_outcome": "NONE",
+  "private_source_material_included": false
+}

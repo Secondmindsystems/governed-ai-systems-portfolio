@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "boundary_fields_present": true,
+      "claim_metadata_complete": true,
+      "public_claim_count": 3,
+      "receipt_id": "PSR-BRAKE-v0.1",
+      "sha256": "1d92d1581de0b5b5f537a0849370946f8682a71416c946b655cf32ec3c115298",
+      "sha256_match": true
+    },
+    {
+      "boundary_fields_present": true,
+      "claim_metadata_complete": true,
+      "public_claim_count": 5,
+      "receipt_id": "PSR-AUTHORIZATION-v0.1",
+      "sha256": "c5f5529239fd11f4ce07a5b381744b2c88fae96b5f6b4866056eab2b64c280e6",
+      "sha256_match": true
+    },
+    {
+      "boundary_fields_present": true,
+      "claim_metadata_complete": true,
+      "public_claim_count": 7,
+      "receipt_id": "PSR-PROVIDERS-v0.1",
+      "sha256": "5febd51467b9baa7aa2ff8abcd2b415ffdbd85456164d640b350433fa4905ceb",
+      "sha256_match": true
+    },
+    {
+      "boundary_fields_present": true,
+      "claim_metadata_complete": true,
+      "public_claim_count": 10,
+      "receipt_id": "PSR-AUTHORITY-SEMANTICS-v0.1",
+      "sha256": "533e9d8ae8824e64bd83b95b9d58bc29587c37a88d4ef8fe49a14cad38d4af83",
+      "sha256_match": true
+    },
+    {
+      "boundary_fields_present": true,
+      "claim_metadata_complete": true,
+      "public_claim_count": 1,
+      "receipt_id": "PSR-EVIDENCE-METHOD-v0.2",
+      "sha256": "6083e977c15232b5b9e4184132b27b4c46115de44520aa13578c90379be74738",
+      "sha256_match": true
+    }
+  ],
+  "decision": "SANITIZED_PACKET_INTEGRITY_PASS",
+  "errors": [],
+  "evidence_packet_snapshot_sha256": "32c48ca94e6143ccd5b2a92bd1fe80c2df15b14aa45c72223dc7abd8a674789a",
+  "generated_at_utc": "2026-08-02T19:08:38Z",
+  "independent_validation": "NONE",
+  "proof_boundary": "Verifies sanitized packet integrity, claim metadata, and declared boundaries only; it does not prove the underlying private repository events.",
+  "public_claim_count": 26,
+  "publication_authority": "WITHHELD",
+  "receipt_count": 5,
+  "schema_version": "public-evidence-verification-result.v0.2",
+  "snapshot_scope": "Verifier source, public evidence index, and indexed sanitized receipt bytes; the generated result is excluded to avoid a self-referential hash.",
+  "underlying_event_proof": "NOT_EVALUATED",
+  "validation_scope": "SANITIZED_DERIVATIVE_ONLY",
+  "verified_inputs": [
+    {
+      "path": "evidence/index.json",
+      "sha256": "1c1b0e6b86ed0b97735ef7ad363b18ef90347bf8933e6840998e428d4de5f705"
+    },
+    {
+      "path": "evidence/public-safe-receipts/PSR-AUTHORITY-SEMANTICS-v0.1.json",
+      "sha256": "533e9d8ae8824e64bd83b95b9d58bc29587c37a88d4ef8fe49a14cad38d4af83"
+    },
+    {
+      "path": "evidence/public-safe-receipts/PSR-AUTHORIZATION-v0.1.json",
+      "sha256": "c5f5529239fd11f4ce07a5b381744b2c88fae96b5f6b4866056eab2b64c280e6"
+    },
+    {
+      "path": "evidence/public-safe-receipts/PSR-BRAKE-v0.1.json",
+      "sha256": "1d92d1581de0b5b5f537a0849370946f8682a71416c946b655cf32ec3c115298"
+    },
+    {
+      "path": "evidence/public-safe-receipts/PSR-EVIDENCE-METHOD-v0.2.json",
+      "sha256": "6083e977c15232b5b9e4184132b27b4c46115de44520aa13578c90379be74738"
+    },
+    {
+      "path": "evidence/public-safe-receipts/PSR-PROVIDERS-v0.1.json",
+      "sha256": "5febd51467b9baa7aa2ff8abcd2b415ffdbd85456164d640b350433fa4905ceb"
+    },
+    {
+      "path": "tools/verify_public_evidence.py",
+      "sha256": "b85f259d3bfc3d54ff6492cdfd5d5fddc6e161c7fda8e69a26638bfff0167159"
+    }
+  ],
+  "verifier": "PUBLIC_EVIDENCE_PACKET_VERIFIER_v0.2"
+}

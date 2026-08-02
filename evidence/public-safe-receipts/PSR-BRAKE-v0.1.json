@@ -1,0 +1,83 @@
+{
+  "schema_version": "public-safe-receipt.v0.2",
+  "receipt_id": "PSR-BRAKE-v0.1",
+  "artifact_status": "PUBLIC_SAFE_CANDIDATE_NOT_PUBLISHED",
+  "case_title": "The Agent That Obeyed the Brake",
+  "event_scope": "One cooperative local repository execution",
+  "technical_evidence_classes": [
+    "LIVE_CONTEXT",
+    "REPEATED_LOCAL"
+  ],
+  "execution_environment": "LOCAL_REPOSITORY",
+  "public_claims": [
+    {
+      "public_claim_id": "PBR-01",
+      "statement": "During one repository task, an active pre-commit gate blocked one proposed file change.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "One cooperative local execution; not a many-agent or adversarial study.",
+      "claim_ceiling": "One active gate block in one cooperative local repository event.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "universal agent obedience",
+        "adversarial robustness",
+        "production or market validation"
+      ]
+    },
+    {
+      "public_claim_id": "PBR-02",
+      "statement": "The agent did not bypass the gate. It reverted the edit and left both the file and gate unchanged.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "Cooperative compliance does not prove that a hostile actor cannot bypass the control.",
+      "claim_ceiling": "In this event, no bypass was used, the edit was reverted, and the file and gate remained unchanged.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "impossible-to-bypass enforcement",
+        "hostile-actor resistance",
+        "repair of the blocked target"
+      ]
+    },
+    {
+      "public_claim_id": "PBR-03",
+      "statement": "A recovery route already defined in the task plan let the agent complete the five-change scope without gaining new permission, and 13 focused tests passed.",
+      "technical_evidence_class": "REPEATED_LOCAL",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "The focused tests do not establish general agent safety or product reliability.",
+      "claim_ceiling": "This task completed its five-change scope through an existing recovery route, with 13 focused tests passing.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "general agent safety",
+        "production reliability",
+        "new permission granted after the block"
+      ]
+    }
+  ],
+  "observed_negative_boundaries": {
+    "gate_bypass_used": false,
+    "gate_modified": false,
+    "new_permission_granted_after_block": false
+  },
+  "test_evidence": {
+    "focused_tests_passed": 13,
+    "scope": "Bounded tests for the completed local change set"
+  },
+  "claim_ceiling": "One documented cooperative local repository execution preserved a live gate block, reverted the blocked edit, and completed the planned scope through an already authorized recovery route.",
+  "limitations": [
+    "This is one cooperative local execution.",
+    "The evidence does not establish that every agent will obey every gate.",
+    "The evidence does not establish that a hostile actor cannot bypass the control.",
+    "The focused tests do not establish general agent safety or product reliability."
+  ],
+  "prohibited_inferences": [
+    "universal or adversarial enforcement",
+    "production reliability",
+    "customer, compliance, or market outcomes"
+  ],
+  "review_relationship": "INTERNAL_REVIEW_ONLY",
+  "market_outcome": "NONE",
+  "private_source_material_included": false
+}

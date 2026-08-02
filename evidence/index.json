@@ -1,0 +1,84 @@
+{
+  "schema_version": "public-evidence-index.v0.2",
+  "index_id": "PUBLIC_EVIDENCE_INDEX_v0.2",
+  "artifact_status": "PUBLIC_SAFE_CANDIDATE_NOT_PUBLISHED",
+  "last_reviewed": "2026-07-29",
+  "hash_algorithm": "SHA-256",
+  "hash_scope": "Sanitized derivative file bytes",
+  "private_source_crosswalk_included": false,
+  "market_outcome": "NONE",
+  "receipts": [
+    {
+      "receipt_id": "PSR-BRAKE-v0.1",
+      "path": "public-safe-receipts/PSR-BRAKE-v0.1.json",
+      "sha256": "1d92d1581de0b5b5f537a0849370946f8682a71416c946b655cf32ec3c115298",
+      "public_claim_ids": [
+        "PBR-01",
+        "PBR-02",
+        "PBR-03"
+      ]
+    },
+    {
+      "receipt_id": "PSR-AUTHORIZATION-v0.1",
+      "path": "public-safe-receipts/PSR-AUTHORIZATION-v0.1.json",
+      "sha256": "c5f5529239fd11f4ce07a5b381744b2c88fae96b5f6b4866056eab2b64c280e6",
+      "public_claim_ids": [
+        "PAI-01",
+        "PAI-02",
+        "PAI-03",
+        "PAI-04",
+        "PAI-05"
+      ]
+    },
+    {
+      "receipt_id": "PSR-PROVIDERS-v0.1",
+      "path": "public-safe-receipts/PSR-PROVIDERS-v0.1.json",
+      "sha256": "5febd51467b9baa7aa2ff8abcd2b415ffdbd85456164d640b350433fa4905ceb",
+      "public_claim_ids": [
+        "PPR-01",
+        "PPR-02",
+        "PPR-03",
+        "PPR-04",
+        "PPR-05",
+        "PPR-06",
+        "PPR-07"
+      ]
+    },
+    {
+      "receipt_id": "PSR-AUTHORITY-SEMANTICS-v0.1",
+      "path": "public-safe-receipts/PSR-AUTHORITY-SEMANTICS-v0.1.json",
+      "sha256": "533e9d8ae8824e64bd83b95b9d58bc29587c37a88d4ef8fe49a14cad38d4af83",
+      "public_claim_ids": [
+        "PAS-01",
+        "PAS-02",
+        "PAS-03",
+        "PAS-04",
+        "PAS-05",
+        "PAS-06",
+        "PAS-07",
+        "PAS-08",
+        "PAS-09",
+        "PAS-10"
+      ]
+    },
+    {
+      "receipt_id": "PSR-EVIDENCE-METHOD-v0.2",
+      "path": "public-safe-receipts/PSR-EVIDENCE-METHOD-v0.2.json",
+      "sha256": "6083e977c15232b5b9e4184132b27b4c46115de44520aa13578c90379be74738",
+      "public_claim_ids": [
+        "PEM-01"
+      ]
+    }
+  ],
+  "claim_metadata_requirement": [
+    "technical_evidence_class",
+    "execution_externality",
+    "required_limitation",
+    "claim_ceiling",
+    "review_relationship",
+    "market_outcome_state",
+    "prohibited_inferences"
+  ],
+  "review_boundary": "Internal review only; not independent third-party validation.",
+  "publication_boundary": "Local candidate. No external publication or disclosure authority is granted by this index."
+}

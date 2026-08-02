@@ -1,0 +1,49 @@
+{
+  "schema_version": "public-safe-receipt.v0.2",
+  "receipt_id": "PSR-EVIDENCE-METHOD-v0.2",
+  "artifact_status": "PUBLIC_SAFE_CANDIDATE_NOT_PUBLISHED",
+  "case_title": "Sentence-Level Evidence Method",
+  "event_scope": "Local evidence-construction and public-derivation artifacts",
+  "technical_evidence_classes": [
+    "WORKING_ARTIFACT"
+  ],
+  "execution_environment": "LOCAL_REPOSITORY",
+  "public_claims": [
+    {
+      "public_claim_id": "PEM-01",
+      "statement": "The 25 engineering-event claims shown in this candidate have public identifiers and private derivation entries recording their reviewed source claims, evidence class, execution setting, and required limitation.",
+      "technical_evidence_class": "WORKING_ARTIFACT",
+      "execution_externality": "LOCAL_REPOSITORY",
+      "required_limitation": "The derivation records and their review are internal; this mapping does not independently prove the underlying events.",
+      "claim_ceiling": "Twenty-five displayed engineering-event claims have private derivation entries with the stated fields.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "third-party validation",
+        "independent reproduction of the underlying events",
+        "production, compliance, customer, or market outcomes"
+      ]
+    }
+  ],
+  "observed_negative_boundaries": {
+    "private_source_paths_included": false,
+    "private_commit_identifiers_included": false,
+    "third_party_validation_claimed": false,
+    "market_outcome_claimed": false
+  },
+  "claim_ceiling": "The local candidate has a private derivation entry for each of its 25 displayed engineering-event claims.",
+  "limitations": [
+    "The evidence method and its review are internal.",
+    "The public receipt does not expose the private derivation records.",
+    "Internal consistency does not independently prove the underlying engineering events.",
+    "The method does not establish production, customer, compliance, or market outcomes."
+  ],
+  "prohibited_inferences": [
+    "third-party validation",
+    "underlying-event proof from derivative consistency alone",
+    "production, compliance, customer, or market outcomes"
+  ],
+  "review_relationship": "INTERNAL_REVIEW_ONLY",
+  "market_outcome": "NONE",
+  "private_source_material_included": false
+}

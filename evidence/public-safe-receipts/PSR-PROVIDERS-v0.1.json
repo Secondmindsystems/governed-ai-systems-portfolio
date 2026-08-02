@@ -1,0 +1,146 @@
+{
+  "schema_version": "public-safe-receipt.v0.2",
+  "receipt_id": "PSR-PROVIDERS-v0.1",
+  "artifact_status": "PUBLIC_SAFE_CANDIDATE_NOT_PUBLISHED",
+  "case_title": "Two Controlled Provider Tests",
+  "event_scope": "Two separate deployed provider-test episodes",
+  "technical_evidence_classes": [
+    "LIVE_CONTEXT",
+    "REPEATED_LOCAL"
+  ],
+  "execution_environment": "DEPLOYED_PROVIDER",
+  "public_claims": [
+    {
+      "public_claim_id": "PPR-01",
+      "statement": "In a deployed test environment, Stripe test mode processed checkout and webhook events, created temporary test access, and issued a one-time access token without charging a real customer or storing the raw token.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "DEPLOYED_PROVIDER",
+      "required_limitation": "The episode used test mode and synthetic identities; no real customer charge occurred.",
+      "claim_ceiling": "One deployed Stripe test-mode episode exercised checkout, webhook, and temporary test access without a real charge or stored raw token.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "real payment processing",
+        "revenue or customer adoption",
+        "production readiness"
+      ]
+    },
+    {
+      "public_claim_id": "PPR-02",
+      "statement": "During the Stripe test, Gemini remained simulated rather than making a real model call.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "DEPLOYED_PROVIDER",
+      "required_limitation": "The payment and model-provider tests did not run simultaneously.",
+      "claim_ceiling": "Gemini remained simulated throughout the cited Stripe test episode.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "simultaneous live-provider operation",
+        "live model inference during the payment test",
+        "production customer workflow"
+      ]
+    },
+    {
+      "public_claim_id": "PPR-03",
+      "statement": "The Stripe test was accompanied by 101 passing backend and tool tests.",
+      "technical_evidence_class": "REPEATED_LOCAL",
+      "execution_externality": "DEPLOYED_PROVIDER",
+      "required_limitation": "The tests support the bounded implementation state, not production reliability.",
+      "claim_ceiling": "One hundred one backend and tool tests passed for the cited Stripe test state.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "production reliability",
+        "customer value",
+        "market validation"
+      ]
+    },
+    {
+      "public_claim_id": "PPR-04",
+      "statement": "A deployed Cloud Run test made one authorized Gemini call and stored the review receipt and provider-usage record in Firestore.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "DEPLOYED_PROVIDER",
+      "required_limitation": "One controlled call does not establish continuous service or customer use.",
+      "claim_ceiling": "One authorized deployed Gemini call stored one review receipt and provider-usage record.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "continuous live service",
+        "customer use",
+        "production operation"
+      ]
+    },
+    {
+      "public_claim_id": "PPR-05",
+      "statement": "During the Gemini test, Stripe was not live, and the AI service returned to simulated mode afterward.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "DEPLOYED_PROVIDER",
+      "required_limitation": "Restoration after one test is not evidence of a general rollback system.",
+      "claim_ceiling": "Stripe was not live in the cited Gemini episode, and the service returned to simulated mode once afterward.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "universal rollback capability",
+        "current deployment state",
+        "simultaneous live-provider operation"
+      ]
+    },
+    {
+      "public_claim_id": "PPR-06",
+      "statement": "The deployed Gemini test was accompanied by 118 passing tool and backend tests.",
+      "technical_evidence_class": "REPEATED_LOCAL",
+      "execution_externality": "DEPLOYED_PROVIDER",
+      "required_limitation": "The tests do not establish continuous production reliability.",
+      "claim_ceiling": "One hundred eighteen tool and backend tests passed for the cited Gemini test state.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "production reliability",
+        "customer value",
+        "market validation"
+      ]
+    },
+    {
+      "public_claim_id": "PPR-07",
+      "statement": "The system completed two separate provider tests: a Stripe test-mode workflow and, later, one deployed Gemini call. Gemini and Stripe were not live together in either cited test.",
+      "technical_evidence_class": "LIVE_CONTEXT",
+      "execution_externality": "DEPLOYED_PROVIDER",
+      "required_limitation": "The portfolio may not present the two episodes as one simultaneous live workflow.",
+      "claim_ceiling": "Two separate provider-test episodes occurred and must remain separate in every derived narrative.",
+      "review_relationship": "INTERNAL_REVIEW_ONLY",
+      "market_outcome_state": "NONE",
+      "prohibited_inferences": [
+        "one simultaneous multi-provider workflow",
+        "production customer journey",
+        "market or revenue outcome"
+      ]
+    }
+  ],
+  "observed_negative_boundaries": {
+    "real_customer_charge": false,
+    "simultaneous_live_stripe_and_gemini": false
+  },
+  "test_evidence": {
+    "stripe_episode_backend_and_tool_tests_passed": 101,
+    "gemini_episode_backend_and_tool_tests_passed": 118
+  },
+  "claim_ceiling": "Two separate controlled provider tests ran on the same review service: one Stripe test-mode workflow and one later deployed Gemini call.",
+  "limitations": [
+    "Stripe operated only in test mode with synthetic identities.",
+    "No real customer charge occurred.",
+    "Only one deployed Gemini call is claimed.",
+    "The providers were not live together.",
+    "The evidence does not establish continuous service, production reliability, customer use, revenue, adoption, or market validation.",
+    "One restoration to simulated mode is not evidence of a universal rollback system."
+  ],
+  "prohibited_inferences": [
+    "one simultaneous live Gemini-and-Stripe workflow",
+    "continuous live service",
+    "production reliability",
+    "customer use, revenue, adoption, or market validation"
+  ],
+  "review_relationship": "INTERNAL_REVIEW_ONLY",
+  "market_outcome": "NONE",
+  "private_source_material_included": false,
+  "third_party_name_use": "Factual interface identification only; no endorsement, partnership, or certification is implied."
+}
