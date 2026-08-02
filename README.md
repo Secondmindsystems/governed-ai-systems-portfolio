@@ -50,6 +50,18 @@ agent will obey every control.
 
 ## Supporting Engineering Evidence
 
+### Public validation in progress
+
+#### [What Happened When We Put a Public AI-Governance Control Under External and Adversarial Pressure](cases/governed-change-under-public-pressure.md)
+
+The runnable Governed Change demo now has a local successor candidate with an
+outsider reproduction route, a named adversarial test pack, and bounded local
+timing evidence. The case remains intentionally incomplete until those
+surfaces are published and an identifiable outsider returns a result.
+
+**Current evidence:** local adversarial and timing work only. No outsider
+reproduction is claimed.
+
 ### [Authorization Before Inference](proof-summaries/authorization-before-inference.md)
 
 A local AI runtime checked one-use permission before contacting a model,
