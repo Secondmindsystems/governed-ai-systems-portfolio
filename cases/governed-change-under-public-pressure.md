@@ -143,3 +143,6 @@ truthful state is:
 
 > Anyone can verify the published demo. Recorded outsider reproduction remains
 > pending.
+
+The public evidence-return door is
+[Governed Change Demo issue #1](https://github.com/Secondmindsystems/governed-change-demo/issues/1).
