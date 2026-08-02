@@ -1,8 +1,13 @@
 # Public Evidence Index
 
-Status: `PUBLIC_SAFE_CANDIDATE_NOT_PUBLISHED`
+Status: `PUBLIC`
 
-Last reviewed: 2026-07-29
+Last reviewed: 2026-08-02
+
+The repository containing this packet is public. The machine-readable receipts
+retain the artifact status recorded when they were created; that historical
+candidate status is provenance, not a claim that this repository remains
+unpublished.
 
 ## How to Read This Index
 

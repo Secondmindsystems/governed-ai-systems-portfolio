@@ -134,7 +134,8 @@ If you are reviewing the evidence trail, inspect:
 
 - the [public evidence index](evidence/EVIDENCE_INDEX.md);
 - the [execution-under-pressure architecture](architecture/governed-execution-under-pressure.md);
-- the machine-readable candidate receipts in
+- the machine-readable receipts (which preserve their historical candidate
+  status) in
   `evidence/public-safe-receipts/`;
 - the [evidence method](methods/EVIDENCE_METHOD.md);
 - the [claim boundaries](CLAIM_BOUNDARIES.md).
@@ -160,7 +161,7 @@ verification possible. A recorded outsider reproduction remains pending until
 an identifiable reviewer returns the environment, commit, command, and result.
 
 The original implementation and test fixtures are not included, so this
-candidate is not independently reproducible implementation proof. The
+portfolio is not independently reproducible implementation proof. The
 portfolio presents three front-door cases and one technical deep dive. Raw
 private receipts, source paths, commit identities, and control machinery are
 not included.

@@ -23,7 +23,7 @@ The verifier uses only the Python standard library. It checks:
 Malformed, missing, or unsupported inputs produce a controlled failure result
 instead of an unhandled traceback.
 
-Expected result for this candidate:
+Expected result for this published packet:
 
 ```text
 decision: SANITIZED_PACKET_INTEGRITY_PASS

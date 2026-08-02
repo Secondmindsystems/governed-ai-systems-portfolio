@@ -15,13 +15,14 @@ from pathlib import Path
 from typing import Any
 
 
-VERIFIER_ID = "PUBLIC_EVIDENCE_PACKET_VERIFIER_v0.2"
+VERIFIER_ID = "PUBLIC_EVIDENCE_PACKET_VERIFIER_v0.3"
 RESULT_SCHEMA = "public-evidence-verification-result.v0.2"
 INDEX_SCHEMA = "public-evidence-index.v0.2"
 RECEIPT_SCHEMA = "public-safe-receipt.v0.2"
 ARTIFACT_STATUS = "PUBLIC_SAFE_CANDIDATE_NOT_PUBLISHED"
 REVIEW_RELATIONSHIP = "INTERNAL_REVIEW_ONLY"
 MARKET_OUTCOME = "NONE"
+CURRENT_REPOSITORY_STATE = "PUBLIC"
 
 ALLOWED_TECHNICAL_CLASSES = {
     "CONCEPT",
@@ -183,7 +184,8 @@ def build_result(
         "validation_scope": "SANITIZED_DERIVATIVE_ONLY",
         "underlying_event_proof": "NOT_EVALUATED",
         "independent_validation": "NONE",
-        "publication_authority": "WITHHELD",
+        "publication_state": CURRENT_REPOSITORY_STATE,
+        "publication_authority": "NOT_GRANTED_BY_VERIFIER",
         "receipt_count": len(receipt_results),
         "public_claim_count": claim_count,
         "checks": receipt_results,
@@ -248,6 +250,8 @@ def run() -> tuple[dict[str, Any], int]:
         errors.append("evidence index schema_version is missing or unsupported")
     if index.get("artifact_status") != ARTIFACT_STATUS:
         errors.append("evidence index has an unexpected artifact_status")
+    if index.get("current_repository_state") != CURRENT_REPOSITORY_STATE:
+        errors.append("evidence index has an unexpected current_repository_state")
     if index.get("market_outcome") != MARKET_OUTCOME:
         errors.append("evidence index has an invalid market_outcome boundary")
 
@@ -382,7 +386,8 @@ def main() -> int:
             "validation_scope": "SANITIZED_DERIVATIVE_ONLY",
             "underlying_event_proof": "NOT_EVALUATED",
             "independent_validation": "NONE",
-            "publication_authority": "WITHHELD",
+            "publication_state": CURRENT_REPOSITORY_STATE,
+            "publication_authority": "NOT_GRANTED_BY_VERIFIER",
             "receipt_count": 0,
             "public_claim_count": 0,
             "checks": [],

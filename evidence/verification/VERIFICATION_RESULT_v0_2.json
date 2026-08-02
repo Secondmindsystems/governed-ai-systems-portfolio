@@ -43,12 +43,13 @@
   ],
   "decision": "SANITIZED_PACKET_INTEGRITY_PASS",
   "errors": [],
-  "evidence_packet_snapshot_sha256": "32c48ca94e6143ccd5b2a92bd1fe80c2df15b14aa45c72223dc7abd8a674789a",
-  "generated_at_utc": "2026-08-02T20:08:54Z",
+  "evidence_packet_snapshot_sha256": "e921fcf5f11a75804b54bd25a50da8229cb0b264a716e2b535fca6b1829aea38",
+  "generated_at_utc": "2026-08-02T21:47:48Z",
   "independent_validation": "NONE",
   "proof_boundary": "Verifies sanitized packet integrity, claim metadata, and declared boundaries only; it does not prove the underlying private repository events.",
   "public_claim_count": 26,
-  "publication_authority": "WITHHELD",
+  "publication_authority": "NOT_GRANTED_BY_VERIFIER",
+  "publication_state": "PUBLIC",
   "receipt_count": 5,
   "schema_version": "public-evidence-verification-result.v0.2",
   "snapshot_scope": "Verifier source, public evidence index, and indexed sanitized receipt bytes; the generated result is excluded to avoid a self-referential hash.",
@@ -57,7 +58,7 @@
   "verified_inputs": [
     {
       "path": "evidence/index.json",
-      "sha256": "1c1b0e6b86ed0b97735ef7ad363b18ef90347bf8933e6840998e428d4de5f705"
+      "sha256": "afb2aa21469025be9f32e0b851630c931bec2ce07bb28b59c6754a4e22a8286b"
     },
     {
       "path": "evidence/public-safe-receipts/PSR-AUTHORITY-SEMANTICS-v0.1.json",
@@ -81,8 +82,8 @@
     },
     {
       "path": "tools/verify_public_evidence.py",
-      "sha256": "b85f259d3bfc3d54ff6492cdfd5d5fddc6e161c7fda8e69a26638bfff0167159"
+      "sha256": "a1fdbc7e4e188acd00951243a12a86f620469de30b6774ddee2c614db9a6e100"
     }
   ],
-  "verifier": "PUBLIC_EVIDENCE_PACKET_VERIFIER_v0.2"
+  "verifier": "PUBLIC_EVIDENCE_PACKET_VERIFIER_v0.3"
 }

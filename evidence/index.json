@@ -2,7 +2,9 @@
   "schema_version": "public-evidence-index.v0.2",
   "index_id": "PUBLIC_EVIDENCE_INDEX_v0.2",
   "artifact_status": "PUBLIC_SAFE_CANDIDATE_NOT_PUBLISHED",
-  "last_reviewed": "2026-07-29",
+  "current_repository_state": "PUBLIC",
+  "initial_publication_commit": "1f09e522ef59399e24c22f0d7765db1fd461d1e6",
+  "last_reviewed": "2026-08-02",
   "hash_algorithm": "SHA-256",
   "hash_scope": "Sanitized derivative file bytes",
   "private_source_crosswalk_included": false,
@@ -80,5 +82,5 @@
     "prohibited_inferences"
   ],
   "review_boundary": "Internal review only; not independent third-party validation.",
-  "publication_boundary": "Local candidate. No external publication or disclosure authority is granted by this index."
+  "publication_boundary": "The repository is public. Receipt artifact_status values preserve their historical pre-publication state and do not grant authority for future publication, disclosure, or stronger claims."
 }

@@ -113,8 +113,8 @@ reproduction.
 
 ## Result
 
-The public-validation workband has produced a reviewable local candidate. The
-external result is unresolved.
+The public-validation workband produced a published, reproducible proof packet.
+The external result is unresolved.
 
 This section will be updated only after:
 
@@ -131,8 +131,8 @@ This section will be updated only after:
   claims.
 - The prototype evaluates declared fixture snapshots; it does not execute live
   repository changes.
-- Publication of this portfolio successor remains a separate operator
-  decision until its verification and fast-forward checks pass.
+- Publication and public CI do not establish independent outsider
+  reproduction.
 
 ## Next evidence event
 
