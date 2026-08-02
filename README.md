@@ -54,13 +54,13 @@ agent will obey every control.
 
 #### [What Happened When We Put a Public AI-Governance Control Under External and Adversarial Pressure](cases/governed-change-under-public-pressure.md)
 
-The runnable Governed Change demo now has a local successor candidate with an
-outsider reproduction route, a named adversarial test pack, and bounded local
-timing evidence. The case remains intentionally incomplete until those
-surfaces are published and an identifiable outsider returns a result.
+The runnable Governed Change demo now publishes an outsider reproduction
+route, a named adversarial test pack, and bounded local timing evidence. Its
+first GitHub Actions run after publication passed. The case remains
+intentionally incomplete until an identifiable outsider returns a result.
 
-**Current evidence:** local adversarial and timing work only. No outsider
-reproduction is claimed.
+**Current evidence:** published runnable artifacts, local adversarial and
+timing results, and public CI success. No outsider reproduction is claimed.
 
 ### [Authorization Before Inference](proof-summaries/authorization-before-inference.md)
 

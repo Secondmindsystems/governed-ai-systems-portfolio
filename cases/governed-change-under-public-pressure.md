@@ -12,11 +12,11 @@ The next test is harder: can someone outside the construction and review team
 clone it, understand it, reproduce its fixed identities, and report where it
 works or becomes confusing?
 
-The public-validation successor has been built locally. It adds an exact
+The public-validation successor is now published. It adds an exact
 reproduction packet, a structured return form, a 15-case adversarial pack, and
-bounded local timing evidence. It has not yet been published, and no outsider
-result has been received. This page therefore records a test in progress, not
-an external-validation result.
+bounded local timing evidence. Its first GitHub Actions run after publication
+passed. No outsider result has been received. This page therefore records a
+public test in progress, not an external-validation result.
 
 ## Problem
 
@@ -105,8 +105,11 @@ the same lineage and output contracts as the demonstration.
 - PASS receipt hash remained
   `sha256:54346099dfef791368c87c2b259e6399ebb683ec4a37e90880c0d05989e6e8d8`.
 
-These are internal local results on an unpublished successor candidate. They
-are not outsider evidence.
+The fixed identities and local results above are now published at demo commit
+[`13a9e8bd8b6aebaeca174a7d49d22f9a6226ac48`](https://github.com/Secondmindsystems/governed-change-demo/commit/13a9e8bd8b6aebaeca174a7d49d22f9a6226ac48).
+The corresponding [public GitHub Actions run](https://github.com/Secondmindsystems/governed-change-demo/actions/runs/30767977358)
+completed successfully. Neither publication nor CI success is outsider
+reproduction.
 
 ## Result
 
@@ -115,10 +118,9 @@ external result is unresolved.
 
 This section will be updated only after:
 
-1. the demo successor is separately authorized and published;
-2. an identifiable outsider returns the required environment, commit,
+1. an identifiable outsider returns the required environment, commit,
    commands, output, fixed identities, and relationship disclosure; and
-3. the returned packet is checked for internal consistency.
+2. the returned packet is checked for internal consistency.
 
 ## Limitations
 
@@ -129,13 +131,15 @@ This section will be updated only after:
   claims.
 - The prototype evaluates declared fixture snapshots; it does not execute live
   repository changes.
-- Publication of this case remains a separate operator decision.
+- Publication of this portfolio successor remains a separate operator
+  decision until its verification and fast-forward checks pass.
 
 ## Next evidence event
 
-Publish the demo successor only after its public-mutation gate is authorized,
-then invite one person outside construction and review to return a structured
-`PASS`, `FAIL`, or `CONFUSED` report. Until then, the truthful state is:
+Invite one person outside construction and review to return a structured
+`PASS`, `FAIL`, or `CONFUSED` report. Outreach remains separately authorized;
+this case does not create that authority. Until a return is received, the
+truthful state is:
 
-> Anyone can verify the current public demo. Recorded outsider reproduction of
-> the successor remains pending.
+> Anyone can verify the published demo. Recorded outsider reproduction remains
+> pending.
