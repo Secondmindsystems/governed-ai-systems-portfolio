@@ -44,7 +44,7 @@
   "decision": "SANITIZED_PACKET_INTEGRITY_PASS",
   "errors": [],
   "evidence_packet_snapshot_sha256": "32c48ca94e6143ccd5b2a92bd1fe80c2df15b14aa45c72223dc7abd8a674789a",
-  "generated_at_utc": "2026-08-02T19:08:38Z",
+  "generated_at_utc": "2026-08-02T20:08:54Z",
   "independent_validation": "NONE",
   "proof_boundary": "Verifies sanitized packet integrity, claim metadata, and declared boundaries only; it does not prove the underlying private repository events.",
   "public_claim_count": 26,

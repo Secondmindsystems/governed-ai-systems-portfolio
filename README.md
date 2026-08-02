@@ -8,6 +8,12 @@ I design AI workflows that check permission before a model or agent acts,
 preserve blocked actions, recover only through already authorized
 alternatives, and produce evidence a reviewer can inspect.
 
+This is an evidence repository. It shows what I built, what happened when a
+control said no, how the work recovered without inventing new permission, and
+where the evidence stops supporting stronger claims.
+
+![Governed execution flow](assets/governed-execution-flow.svg)
+
 My work focuses on a practical question:
 
 > What should an AI-assisted workflow do when useful execution reaches a
@@ -24,6 +30,9 @@ permission before consequence
 
 The cases show both sides of the problem: correct controls that preserve
 useful progress, and defective controls repaired without erasing the stop.
+
+For a runnable public example, see
+[One Change, Two Gates, One Receipt](https://github.com/Secondmindsystems/governed-change-demo).
 
 ## Start Here
 
@@ -125,6 +134,19 @@ It fails closed on malformed or missing inputs and emits hashes for its source,
 index, receipts, and verified packet snapshot. It verifies the internal
 integrity of this public packet, not the underlying private repository events.
 
+Anyone can independently verify the published evidence packet:
+
+```text
+git clone https://github.com/Secondmindsystems/governed-ai-systems-portfolio.git
+cd governed-ai-systems-portfolio
+python tools/verify_public_evidence.py
+```
+
+The expected decision is `SANITIZED_PACKET_INTEGRITY_PASS`, covering five
+sanitized receipts and 26 public claims. This repository makes independent
+verification possible. A recorded outsider reproduction remains pending until
+an identifiable reviewer returns the environment, commit, command, and result.
+
 The original implementation and test fixtures are not included, so this
 candidate is not independently reproducible implementation proof. The
 portfolio presents three front-door cases and one technical deep dive. Raw
@@ -166,3 +188,9 @@ This portfolio is designed for work involving:
 ## Contact
 
 Connect through the [Second Mind Systems GitHub profile](https://github.com/Secondmindsystems).
+
+## Use of These Materials
+
+© Second Mind Systems. Published for inspection and evaluation. No license is
+granted to copy, modify, redistribute, or reuse these materials except as
+permitted by law.

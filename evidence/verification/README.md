@@ -31,6 +31,11 @@ receipts: 5
 public claims: 26
 ```
 
+When reporting an independent reproduction, include the operating system,
+Python version, repository commit, exact command, exit code, and decision.
+Until an identifiable reviewer returns that packet, independent verification
+is available but recorded outsider reproduction remains pending.
+
 The captured local result is
 [VERIFICATION_RESULT_v0_2.json](VERIFICATION_RESULT_v0_2.json).
 

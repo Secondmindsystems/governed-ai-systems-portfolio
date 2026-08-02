@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Governed execution flow</title>
+  <desc id="desc">A proposed AI change is checked, blocked when a path or claim is not allowed, repaired within scope, checked again, and recorded with a receipt.</desc>
+  <rect width="1200" height="260" fill="#f7f9fc"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="600" y="34" font-size="24" font-weight="700" fill="#172033">One Change, Two Gates, One Receipt</text>
+    <g font-size="15" fill="#172033">
+      <rect x="30" y="85" width="140" height="76" rx="12" fill="#ffffff" stroke="#42526e" stroke-width="2"/>
+      <text x="100" y="116"><tspan x="100">AI proposes</tspan><tspan x="100" dy="22">a change</tspan></text>
+      <rect x="198" y="85" width="154" height="76" rx="12" fill="#ffffff" stroke="#42526e" stroke-width="2"/>
+      <text x="275" y="106"><tspan x="275">Context and</tspan><tspan x="275" dy="20">authority</tspan><tspan x="275" dy="20">checked</tspan></text>
+      <rect x="380" y="85" width="150" height="76" rx="12" fill="#fff6e5" stroke="#b36b00" stroke-width="2"/>
+      <text x="455" y="106"><tspan x="455">Path or claim</tspan><tspan x="455" dy="20">problem</tspan><tspan x="455" dy="20">found</tspan></text>
+      <rect x="558" y="85" width="120" height="76" rx="12" fill="#ffecec" stroke="#a61b1b" stroke-width="2"/>
+      <text x="618" y="116"><tspan x="618">Change</tspan><tspan x="618" dy="22">BLOCKED</tspan></text>
+      <rect x="706" y="85" width="140" height="76" rx="12" fill="#eef6ff" stroke="#1f5d99" stroke-width="2"/>
+      <text x="776" y="116"><tspan x="776">Bounded</tspan><tspan x="776" dy="22">repair</tspan></text>
+      <rect x="874" y="85" width="140" height="76" rx="12" fill="#eef6ff" stroke="#1f5d99" stroke-width="2"/>
+      <text x="944" y="106"><tspan x="944">Full</tspan><tspan x="944" dy="20">re-evaluation</tspan><tspan x="944" dy="20">runs</tspan></text>
+      <rect x="1042" y="85" width="128" height="76" rx="12" fill="#eaf8ef" stroke="#1c7c3b" stroke-width="2"/>
+      <text x="1106" y="106"><tspan x="1106">Receipt-backed</tspan><tspan x="1106" dy="20">PASS</tspan><tspan x="1106" dy="20">preserved</tspan></text>
+    </g>
+    <g stroke="#637083" stroke-width="2" fill="none">
+      <path d="M170 123h28"/><path d="M352 123h28"/><path d="M530 123h28"/><path d="M678 123h28"/><path d="M846 123h28"/><path d="M1014 123h28"/>
+    </g>
+    <g fill="#637083">
+      <path d="M198 123l-8-5v10z"/><path d="M380 123l-8-5v10z"/><path d="M558 123l-8-5v10z"/><path d="M706 123l-8-5v10z"/><path d="M874 123l-8-5v10z"/><path d="M1042 123l-8-5v10z"/>
+    </g>
+    <text x="600" y="215" font-size="16" fill="#42526e">Useful work counts only when authority, controls, evidence, and acceptance agree.</text>
+  </g>
+</svg>
