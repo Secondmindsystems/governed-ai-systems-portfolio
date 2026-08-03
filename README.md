@@ -50,6 +50,15 @@ agent will obey every control.
 
 ## Supporting Engineering Evidence
 
+### Operational Campaign case
+
+#### [Persistent Campaigns Without Authority Expansion](cases/persistent-campaigns-without-authority-expansion.md)
+
+A bounded local Codex intake path was adversarially repaired, rechecked,
+exercised with one campaign-shaped and one ordinary objective, and accepted
+with a documented Windows path limitation. It was published after independent
+internal claim and IP review and explicit operator authorization.
+
 ### Public validation in progress
 
 #### [What Happened When We Put a Public AI-Governance Control Under External and Adversarial Pressure](cases/governed-change-under-public-pressure.md)
