@@ -1,6 +1,6 @@
 # Persistent Campaigns Without Authority Expansion
 
-Status: `DRAFT — INDEPENDENT CLAIM AND IP REVIEW PENDING`
+Status: `PUBLISHED — BOUNDED LOCAL EVIDENCE`
 
 ## Thirty-second version
 
@@ -66,7 +66,7 @@ The implementation separates four concerns:
 Classification cannot create authority. Re-entry cannot widen an accepted
 envelope. A successful trial cannot declare its own permanent acceptance.
 
-## What the first review found
+## What early review rounds found
 
 The initial adapter was directionally correct but did not yet justify
 installation. Review pressure exposed defects that mattered to the authority
