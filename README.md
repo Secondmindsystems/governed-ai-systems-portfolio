@@ -50,6 +50,16 @@ agent will obey every control.
 
 ## Supporting Engineering Evidence
 
+### Draft under independent claim and IP review
+
+#### [Persistent Campaigns Without Authority Expansion](cases/persistent-campaigns-without-authority-expansion.md)
+
+A bounded local Codex intake path was adversarially repaired, rechecked,
+exercised with one campaign-shaped and one ordinary objective, and accepted
+with a documented Windows path limitation. The case remains a local draft and
+is not published evidence until independent claim and IP review passes and the
+operator separately authorizes publication.
+
 ### Public validation in progress
 
 #### [What Happened When We Put a Public AI-Governance Control Under External and Adversarial Pressure](cases/governed-change-under-public-pressure.md)
