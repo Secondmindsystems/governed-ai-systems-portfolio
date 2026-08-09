@@ -59,18 +59,6 @@ exercised with one campaign-shaped and one ordinary objective, and accepted
 with a documented Windows path limitation. It was published after independent
 internal claim and IP review and explicit operator authorization.
 
-### Public validation in progress
-
-#### [What Happened When We Put a Public AI-Governance Control Under External and Adversarial Pressure](cases/governed-change-under-public-pressure.md)
-
-The runnable Governed Change demo now publishes an outsider reproduction
-route, a named adversarial test pack, and bounded local timing evidence. Its
-first GitHub Actions run after publication passed. The case remains
-intentionally incomplete until an identifiable outsider returns a result.
-
-**Current evidence:** published runnable artifacts, local adversarial and
-timing results, and public CI success. No outsider reproduction is claimed.
-
 ### [Authorization Before Inference](proof-summaries/authorization-before-inference.md)
 
 A local AI runtime checked one-use permission before contacting a model,
@@ -184,6 +172,18 @@ third-party-validation outcomes. Each case states its exact limit.
 The current evidence is strongest in working artifacts, repeated local tests,
 and bounded live-context executions.
 
+## Work in Progress
+
+### [What Happened When We Put a Public AI-Governance Control Under External and Adversarial Pressure](cases/governed-change-under-public-pressure.md)
+
+The runnable Governed Change demo publishes an outsider reproduction route, a
+named adversarial test pack, bounded local timing evidence, and a passing
+public GitHub Actions run. This case remains explicitly in progress until an
+identifiable outsider returns a result.
+
+**Current evidence:** published runnable artifacts, local adversarial and
+timing results, and public CI success. No outsider reproduction is claimed.
+
 ## Authorship and AI Use
 
 Tavio Lawrence defined the objectives, system architecture, authority
@@ -209,7 +209,15 @@ This portfolio is designed for work involving:
 
 ## Contact
 
-Connect through the [Second Mind Systems GitHub profile](https://github.com/Secondmindsystems).
+**secondmindsystems@gmail.com**
+
+Open to roles and engagements in AI governance engineering, agent
+authorization, AI platform controls, and responsible-AI implementation.
+Questions about the evidence in this repository are welcome — including
+challenges to any claim made here.
+
+Also reachable through the
+[Second Mind Systems GitHub profile](https://github.com/Secondmindsystems).
 
 ## Use of These Materials
 
