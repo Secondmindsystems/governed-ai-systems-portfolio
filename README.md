@@ -1,5 +1,3 @@
-# Tavio Lawrence
-
 ## Governed AI Systems Architect
 
 **AI Governance Engineering · Agent Authorization · AI Platform Controls**
@@ -184,9 +182,7 @@ identifiable outsider returns a result.
 **Current evidence:** published runnable artifacts, local adversarial and
 timing results, and public CI success. No outsider reproduction is claimed.
 
-## Authorship and AI Use
-
-Tavio Lawrence defined the objectives, system architecture, authority
+There are defined objectives, system architecture, authority
 boundaries, constraints, acceptance gates, evidence requirements, claim
 limits, and integration decisions. AI agents performed bounded
 implementation, analysis, drafting, and review work under those controls.
