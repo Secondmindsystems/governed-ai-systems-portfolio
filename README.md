@@ -1,6 +1,6 @@
 # Tavio Lawrence
 
-## Governed AI Systems Architect
+## Agentic AI Systems & Control Engineer
 
 **AI Governance Engineering · Agent Authorization · AI Platform Controls**
 
@@ -35,6 +35,10 @@ For a runnable public example, see
 [One Change, Two Gates, One Receipt](https://github.com/Secondmindsystems/governed-change-demo).
 
 ## Start Here
+
+Hiring for a specific responsibility? Use the
+[requirement-to-proof routes](PROOF_ROUTES.md) to find the relevant example,
+verification method, and evidence limit without learning internal terminology.
 
 ### [The Agent That Obeyed the Brake](cases/agent-obeyed-the-brake.md)
 
