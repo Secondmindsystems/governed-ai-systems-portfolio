@@ -2,15 +2,21 @@
 
 ## Agentic AI Systems & Control Engineer
 
-**AI Governance Engineering · Agent Authorization · AI Platform Controls**
+I build agentic AI systems and the controls around them: permission checks,
+automated evaluation, developer safeguards, and records that make their
+behavior inspectable.
 
-I design AI workflows that check permission before a model or agent acts,
-preserve blocked actions, recover only through already authorized
-alternatives, and produce evidence a reviewer can inspect.
+My public work includes a
+[runnable change-evaluation demo](https://github.com/Secondmindsystems/governed-change-demo),
+a [local Git safeguard](https://github.com/Secondmindsystems/ai-protected-paths)
+that requires approval for selected file paths, and engineering case studies
+showing how I investigated failures and repaired controls.
 
-This is an evidence repository. It shows what I built, what happened when a
-control said no, how the work recovered without inventing new permission, and
-where the evidence stops supporting stronger claims.
+The repository is structured as a navigation system, designed to route you
+from the responsibility or capability you want to evaluate to the work and
+evidence that matter.
+
+**[Start with a responsibility or capability →](PROOF_ROUTES.md)**
 
 ![Governed execution flow](assets/governed-execution-flow.svg)
 
@@ -18,15 +24,6 @@ My work focuses on a practical question:
 
 > What should an AI-assisted workflow do when useful execution reaches a
 > boundary it may not cross?
-
-The differentiator is operational evidence, not governance vocabulary.
-
-```text
-permission before consequence
--> refusal preserved under pressure
--> useful recovery without expanded authority
--> evidence that limits the final claim
-```
 
 The cases show both sides of the problem: correct controls that preserve
 useful progress, and defective controls repaired without erasing the stop.
@@ -36,9 +33,9 @@ For a runnable public example, see
 
 ## Start Here
 
-Hiring for a specific responsibility? Use the
-[requirement-to-proof routes](PROOF_ROUTES.md) to find the relevant example,
-verification method, and evidence limit without learning internal terminology.
+Exploring a capability or hiring for a specific responsibility? Use the
+[work and evidence routes](PROOF_ROUTES.md) to find a relevant example
+and see what you can inspect or run.
 
 ### [The Agent That Obeyed the Brake](cases/agent-obeyed-the-brake.md)
 
@@ -166,15 +163,6 @@ portfolio is not independently reproducible implementation proof. The
 portfolio presents three front-door cases and one technical deep dive. Raw
 private receipts, source paths, commit identities, and control machinery are
 not included.
-
-## What This Portfolio Does Not Claim
-
-These cases show bounded local and deployed-test behavior. They do not
-establish production, customer, compliance, adversarial-security, market, or
-third-party-validation outcomes. Each case states its exact limit.
-
-The current evidence is strongest in working artifacts, repeated local tests,
-and bounded live-context executions.
 
 ## Work in Progress
 

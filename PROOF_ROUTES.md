@@ -2,9 +2,9 @@
 
 I build agentic AI systems and the controls around them: permission checks, evaluation, developer safeguards, provider boundaries, and evidence showing what a system actually did.
 
-The repository is structured as a navigation system, designed to route you from the responsibility you need to evaluate to the work and evidence that matter.
+The repository is structured as a navigation system, designed to route you from the responsibility or capability you want to evaluate to the work and evidence that matter.
 
-If you’re evaluating a specific engineering responsibility, start with the closest match below.
+Start with the responsibility or capability closest to what you care about.
 
 ## Choose what you want to evaluate
 
@@ -18,24 +18,22 @@ If you’re evaluating a specific engineering responsibility, start with the clo
 | Whether sensitive repository paths can require explicit approval before a commit proceeds | [AI Protected Paths](https://github.com/Secondmindsystems/ai-protected-paths) | A local Git safeguard with configurable protected paths, one-use approvals, tests, installation instructions, and release-validation records |
 | Whether the published evidence packet is internally consistent | [Verification instructions](evidence/verification/README.md) | A checker you can run to verify receipt hashes and claim mappings against the published packet |
 
-Some links lead to runnable public code; others document work in private systems. Those build records are first-party accounts. The packet checker verifies published records, not the private events behind them. Each linked page explains its limits.
+Some links lead to runnable public code; others document work in private systems through first-party build records. The packet checker checks the consistency of the published records.
 
 ## A ten-minute review
 
 Choose one route; you don’t need to read the whole portfolio.
 
-1. Pick the responsibility closest to what you care about.
+1. Pick the responsibility or capability closest to what you care about.
 2. Open the linked case or implementation.
 3. Inspect the evidence attached to it.
 4. If the route is runnable, follow its instructions and compare your results. Try Git-hook tools in a disposable repository. For private-build records, follow the references into the [evidence index](evidence/EVIDENCE_INDEX.md).
-5. Read [what the portfolio establishes and its limitations](CLAIM_BOUNDARIES.md), along with [how I worked with AI](methods/AUTHORSHIP_AND_AI_USE.md).
+5. For more context, read the [evidence scope](CLAIM_BOUNDARIES.md) and [how I worked with AI](methods/AUTHORSHIP_AND_AI_USE.md).
 
-By the end, you should know what the work demonstrates and what would need additional evidence. Ten minutes is a suggested review budget, not a measured completion time.
+Use the ten minutes to explore one example and see how it works.
 
 If you’re interested in failure analysis, start with [Permission required versus granted](cases/when-permission-required-was-mistaken-for-permission-granted.md).
 
-## Discuss a role or ask for more evidence
-
-For production responsibilities, ask about sustained operation, incidents, customer exposure, team responsibilities, and deployment history separately. Local tests and controlled deployments do not establish those on their own.
+## Discuss the work
 
 Questions or challenges: use the [contact section](README.md#contact).
