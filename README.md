@@ -1,10 +1,8 @@
 # Tavio Lawrence
 
-## Agentic AI Systems & Control Engineer
+## AI Systems & Harness Engineer
 
-I build agentic AI systems and the controls around them: permission checks,
-automated evaluation, developer safeguards, and records that make their
-behavior inspectable.
+I build harnesses and systems around AI models that shape how they reason, use context, stay within boundaries, evaluate their work, and produce evidence about what they did. My work spans reasoning and behavior structures, agent evaluation, authorization, developer safeguards, and governed execution.
 
 My public work includes a
 [runnable change-evaluation demo](https://github.com/Secondmindsystems/governed-change-demo),
