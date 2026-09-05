@@ -1,46 +1,41 @@
-# Requirement → claim → evidence → limit
+# Start with the work you need to evaluate
 
-Tavio Lawrence's focus is agentic AI systems and controls: permission checks,
-evaluation, developer safeguards, and inspectable execution evidence. This is
-a responsibility-based navigation page, not a claim of employment seniority.
+I build agentic AI systems and the controls around them: permission checks, evaluation, developer safeguards, provider boundaries, and evidence showing what a system actually did.
 
-## Choose the responsibility you need to evaluate
+The repository is structured as a navigation system, designed to route you from the responsibility you need to evaluate to the work and evidence that matter.
 
-| Responsibility | Start with | Proof mode | What remains unproven here |
-| --- | --- | --- | --- |
-| Evaluate agent actions against explicit constraints | [Governed Change demo](https://github.com/Secondmindsystems/governed-change-demo) | PUBLIC_DEMONSTRATION: separately runnable synthetic example | Production agent reliability and reproduction of the private systems |
-| Check authorization before a model request | [Authorization before inference](proof-summaries/authorization-before-inference.md) | PUBLIC_HISTORICAL_EVIDENCE: sanitized first-party account | Public reproduction of the original runtime |
-| Recover from a refused repository change | [The agent that obeyed the brake](cases/agent-obeyed-the-brake.md) | PUBLIC_HISTORICAL_EVIDENCE: bounded cooperative episode | Protection against a malicious or non-cooperative agent |
-| Diagnose and repair an authorization classifier | [Permission required versus granted](cases/when-permission-required-was-mistaken-for-permission-granted.md) | PUBLIC_HISTORICAL_EVIDENCE: internal repair and replay | Universal correctness or production qualification |
-| Integrate providers under controlled test conditions | [Two controlled provider tests](proof-summaries/two-controlled-provider-tests.md) | PUBLIC_HISTORICAL_EVIDENCE: separate bounded provider tests | Simultaneous provider operation, customer adoption, or production scale |
-| Verify an evidence packet's internal consistency | [Verification instructions](evidence/verification/README.md) | PUBLIC_REPRODUCTION route for the packet checker only | Authenticity or reproduction of the underlying private events |
+If you’re evaluating a specific engineering responsibility, start with the closest match below.
 
-Proof-mode labels describe the object being inspected. Publicly readable
-historical evidence can still be first-party evidence. A runnable synthetic
-demonstration is not a reproduction of a private implementation. An available
-reproduction route does not mean an outside person has run it.
+## Choose what you want to evaluate
 
-## A ten-minute review route
+| What you want to evaluate | Start here | What you can inspect |
+| --- | --- | --- |
+| Whether agent actions can be checked against explicit constraints | [Governed Change Demo](https://github.com/Secondmindsystems/governed-change-demo) | A runnable synthetic demo with deterministic PASS/BLOCK/HOLD behavior, automated tests, repair cases, replay checks, and execution receipts |
+| Whether authorization is checked before a model request | [Authorization before inference](proof-summaries/authorization-before-inference.md) | First-party build records showing one-use permission checked before model transport and blocked on reuse |
+| Whether an agent can stop cleanly when a repository action is refused | [The agent that obeyed the brake](cases/agent-obeyed-the-brake.md) | Refusal, recovery, and preserved evidence from one cooperative agent’s repository-change attempt |
+| Whether an authorization failure can be diagnosed and repaired | [Permission required versus granted](cases/when-permission-required-was-mistaken-for-permission-granted.md) | The original failure, targeted repair, tests, and replay—with unresolved failures kept visible |
+| Whether cloud services and APIs can be integrated under controlled conditions | [Two controlled provider tests](proof-summaries/two-controlled-provider-tests.md) | First-party records of separate Stripe test-mode and Cloud Run/Gemini tests, including recorded results and Firestore receipts |
+| Whether sensitive repository paths can require explicit approval before a commit proceeds | [AI Protected Paths](https://github.com/Secondmindsystems/ai-protected-paths) | A local Git safeguard with configurable protected paths, one-use approvals, tests, installation instructions, and release-validation records |
+| Whether the published evidence packet is internally consistent | [Verification instructions](evidence/verification/README.md) | A checker you can run to verify receipt hashes and claim mappings against the published packet |
 
-This is a suggested time budget, not measured human-comprehension evidence.
+Some links lead to runnable public code; others document work in private systems. Those build records are first-party accounts. The packet checker verifies published records, not the private events behind them. Each linked page explains its limits.
 
-1. Select one responsibility above and read its case and limitation.
-2. For historical cases, follow their pointers into the [evidence index](evidence/EVIDENCE_INDEX.md). For the synthetic example, stay in the separate demo repository and inspect its proof and reproduction artifacts. For packet integrity, use the checker's own instructions and result.
-3. Run the [packet checker](evidence/verification/README.md) if evaluating packet integrity, or follow the separate demo repository's instructions if evaluating synthetic behavior.
-4. Read [claim boundaries](CLAIM_BOUNDARIES.md) and [authorship and AI use](methods/AUTHORSHIP_AND_AI_USE.md).
-5. State which bounded claim the evidence supports and which stronger claim it does not.
+## A ten-minute review
 
-For failure analysis, start with the authorization-classifier repair. For
-production hiring, ask separately about sustained operation, incidents,
-customer exposure, team responsibilities, and employment history; these
-cannot be inferred from this packet.
+Choose one route; you don’t need to read the whole portfolio.
 
-## Opportunity decisions
+1. Pick the responsibility closest to what you care about.
+2. Open the linked case or implementation.
+3. Inspect the evidence attached to it.
+4. If the route is runnable, follow its instructions and compare your results. Try Git-hook tools in a disposable repository. For private-build records, follow the references into the [evidence index](evidence/EVIDENCE_INDEX.md).
+5. Read [what the portfolio establishes and its limitations](CLAIM_BOUNDARIES.md), along with [how I worked with AI](methods/AUTHORSHIP_AND_AI_USE.md).
 
-Route existing evidence before proposing new credential work. If a role needs
-production-scale operation rather than local or bounded-test behavior, a
-clear explanation is not a substitute for that missing evidence. Conversely,
-do not require another implementation merely because an existing proof was
-hard to find.
+By the end, you should know what the work demonstrates and what would need additional evidence. Ten minutes is a suggested review budget, not a measured completion time.
+
+If you’re interested in failure analysis, start with [Permission required versus granted](cases/when-permission-required-was-mistaken-for-permission-granted.md).
+
+## Discuss a role or ask for more evidence
+
+For production responsibilities, ask about sustained operation, incidents, customer exposure, team responsibilities, and deployment history separately. Local tests and controlled deployments do not establish those on their own.
 
 Questions or challenges: use the [contact section](README.md#contact).
