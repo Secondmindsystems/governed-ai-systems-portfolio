@@ -1,6 +1,6 @@
 # Tavio Lawrence
 
-## Agentic AI Systems & Control Engineer
+## Agentic AI Systems & Harness Engineer
 
 I build agentic AI systems and the controls around them: permission checks,
 automated evaluation, developer safeguards, and records that make their
