@@ -29,6 +29,18 @@ The cases show different parts of that problem: how agents handle boundaries, ho
 For a runnable public example, see
 [One Change, Two Gates, One Receipt](https://github.com/Secondmindsystems/governed-change-demo).
 
+## Selected Applied Systems Work
+
+### [Translate institutional rules into controls](https://github.com/Secondmindsystems/mark-cuban-pbm-contract-contribution-repost)
+
+This work examines how purchaser protections in Mark Cuban's open-source PBM agreement can change as the agreement moves through procurement, negotiation, completed exhibits, implementation, and later amendments.
+
+We developed a controlled-adaptation approach for surfacing material deviations, deciding them explicitly, and reconciling the completed agreement against what was approved.
+
+**[Mark Cuban reposted our resulting contribution on LinkedIn.](https://www.linkedin.com/analytics/post/urn:li:activity:7500402183310565376/?resultType=RESHARES)**
+
+[Inspect the analysis, delivered artifacts, and evidence →](https://github.com/Secondmindsystems/mark-cuban-pbm-contract-contribution-repost)
+
 ## Start Here
 
 Exploring a capability or hiring for a specific responsibility? Use the
