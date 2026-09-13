@@ -18,6 +18,23 @@ evidence that matter.
 
 **[Start with a responsibility or capability →](PROOF_ROUTES.md)**
 
+## Featured project — Blue Jackal
+
+**Behavioral regression testing for coding agents.**
+
+Blue Jackal is for teams turning coding agents from experiments into repeatable
+engineering workflows. It tests **selective adaptation**: whether the agent
+responds appropriately to what changed without losing the behavior that should
+still hold.
+
+**Unit tests check the code. Blue Jackal checks the agent.**
+
+That distinction matters because **the code can be right while the agent's behavior
+is wrong.** An agent can complete the work while its observed actions violate a
+changed boundary.
+
+[Blue Jackal](https://github.com/Secondmindsystems/blue-jackal) · [How it works](https://github.com/Secondmindsystems/blue-jackal/blob/main/docs/HOW_BLUE_JACKAL_WORKS.md) · [v0.1.0](https://github.com/Secondmindsystems/blue-jackal/releases/tag/v0.1.0)
+
 ![Governed execution flow](assets/governed-execution-flow.svg)
 
 My work focuses on a practical question:
