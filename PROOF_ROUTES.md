@@ -10,6 +10,7 @@ Start with the responsibility or capability closest to what you care about.
 
 | What you want to evaluate | Start here | What you can inspect |
 | --- | --- | --- |
+| Whether a coding-agent workflow still satisfies its contract when inputs, evidence, or authority change | [Blue Jackal](https://github.com/Secondmindsystems/blue-jackal) | A runnable behavioral regression loop with baseline, changed conditions, independent checks, separate WORK / AUTHORITY / CLAIM findings, repair verification, and inspectable local reports |
 | Whether agent actions can be checked against explicit constraints | [Governed Change Demo](https://github.com/Secondmindsystems/governed-change-demo) | A runnable synthetic demo with deterministic PASS/BLOCK/HOLD behavior, automated tests, repair cases, replay checks, and execution receipts |
 | Whether authorization is checked before a model request | [Authorization before inference](proof-summaries/authorization-before-inference.md) | First-party build records showing one-use permission checked before model transport and blocked on reuse |
 | Whether an agent can stop cleanly when a repository action is refused | [The agent that obeyed the brake](cases/agent-obeyed-the-brake.md) | Refusal, recovery, and preserved evidence from one cooperative agent’s repository-change attempt |

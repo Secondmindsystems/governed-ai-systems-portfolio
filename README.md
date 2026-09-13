@@ -7,7 +7,8 @@ I build harnesses around AI models that shape how they reason, use context, stay
 Those harnesses operate around the model rather than changing its weights. They give the same underlying AI more structure for handling complex work: reasoning guidance, behavioral constraints, authority, evaluation, continuity, and evidence.
 
 My public work includes a
-[runnable change-evaluation demo](https://github.com/Secondmindsystems/governed-change-demo),
+[behavioral regression testing tool for coding agents](https://github.com/Secondmindsystems/blue-jackal),
+a [runnable change-evaluation demo](https://github.com/Secondmindsystems/governed-change-demo),
 a [local Git safeguard](https://github.com/Secondmindsystems/ai-protected-paths)
 that requires approval for selected file paths, and engineering case studies
 showing how I investigated failures and repaired controls.
@@ -17,6 +18,21 @@ from the responsibility or capability you want to evaluate to the work and
 evidence that matter.
 
 **[Start with a responsibility or capability →](PROOF_ROUTES.md)**
+
+## Featured open-source project
+
+### [Blue Jackal — Behavioral regression testing for coding agents](https://github.com/Secondmindsystems/blue-jackal)
+
+Blue Jackal is for teams turning coding agents from experiments into repeatable
+engineering workflows. It changes relevant operating conditions and checks
+whether the agent still satisfies its declared contract.
+
+Unit tests check the code. Blue Jackal checks whether the agent's behavior still
+holds when inputs, evidence, or authority change.
+
+**[Explore Blue Jackal →](https://github.com/Secondmindsystems/blue-jackal)** ·
+**[Understand the experiment →](https://github.com/Secondmindsystems/blue-jackal/blob/main/docs/HOW_BLUE_JACKAL_WORKS.md)** ·
+**[Download v0.1.0 →](https://github.com/Secondmindsystems/blue-jackal/releases/tag/v0.1.0)**
 
 ![Governed execution flow](assets/governed-execution-flow.svg)
 
